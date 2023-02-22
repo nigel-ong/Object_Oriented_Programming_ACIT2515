@@ -107,7 +107,7 @@ def play(game, x_player, o_player, print_game = True):
             # the bottom code is the same as the code above
             # if letter == "x":
             #     letter = "o"
-
+    
             # else:
             #     letter = "x"
 
