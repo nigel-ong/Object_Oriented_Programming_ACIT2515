@@ -8,8 +8,11 @@ guess = 0
 
 while guess != rn :
     guess = input("Guess the number between 1-10: ") 
+    if guess.lower() == "exit":
+        break
+
     while guess not in ["1","2","3","4","5","6","7","8","9","10"]:
-        print("invalid")
+        guess = input("Please guess a number between 1-10: ") 
 
     if int(guess) < rn:
         print("Too low")
@@ -20,4 +23,4 @@ while guess != rn :
     else:
         counter += 1
         print(f"You found da number, you took {counter} guesses")
-        
+        counter = 0
